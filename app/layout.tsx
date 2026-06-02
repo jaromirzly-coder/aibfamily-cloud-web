@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
 };
 
-const GA_ID = "G-PLACEHOLDER";
+const GA_ID = "G-LP9LSDLSHN";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
