@@ -1,0 +1,40 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a0533"/>
+      <stop offset="60%" stop-color="#2d1b69"/>
+      <stop offset="100%" stop-color="#4a044e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="25%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="60%" r="45%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title-grad" x1="0" y1="0" x2="500" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="300" cy="252" r="330" fill="url(#glow1)"/>
+  <circle cx="960" cy="378" r="270" fill="url(#glow2)"/>
+  <!-- Shield heart icon -->
+  <path d="M80 315L116 294V254L80 233L44 254V294L80 315Z" fill="#ec4899" opacity="0.9"/>
+  <path d="M80 303C80 303 60 287 60 274C60 268 65 263 71 263C74.5 263 77.5 264.5 80 267C82.5 264.5 85.5 263 89 263C95 263 100 268 100 274C100 287 80 303 80 303Z" fill="white" opacity="0.9"/>
+  <!-- Brand -->
+  <text x="148" y="258" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="72" font-weight="800" fill="white" letter-spacing="-2">AIB</text>
+  <text x="290" y="258" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="72" font-weight="800" fill="url(#title-grad)" letter-spacing="-2">family</text>
+  <text x="80" y="320" font-family="'Plus Jakarta Sans', Inter, sans-serif" font-size="30" font-weight="500" fill="#d1a8e8">Safe AI for Kids Ages 4–15 · Parent Dashboard · Crisis Detection</text>
+  <!-- Badges -->
+  <rect x="80" y="400" width="160" height="48" rx="12" fill="rgba(236,72,153,0.15)" stroke="rgba(236,72,153,0.4)" stroke-width="1.5"/>
+  <text x="160" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#f9a8d4" text-anchor="middle">COPPA Safe</text>
+  <rect x="260" y="400" width="220" height="48" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.4)" stroke-width="1.5"/>
+  <text x="370" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#c4b5fd" text-anchor="middle">5-Layer AIBguard</text>
+  <rect x="500" y="400" width="220" height="48" rx="12" fill="rgba(249,115,22,0.15)" stroke="rgba(249,115,22,0.4)" stroke-width="1.5"/>
+  <text x="610" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#fdba74" text-anchor="middle">UK Children's Code</text>
+  <text x="1120" y="590" font-family="Inter, sans-serif" font-size="20" font-weight="500" fill="rgba(255,255,255,0.3)" text-anchor="end">aibfamily.cloud</text>
+</svg>

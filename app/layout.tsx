@@ -5,22 +5,29 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://aibfamily.cloud"),
   title: {
-    default: "AIBfamily — Safe AI for Families & Kids Ages 4–15",
+    default: "AIBfamily — Safe AI for Kids Ages 4–15 | Parental Control AI",
     template: "%s | AIBfamily",
   },
   description:
-    "AIBfamily gives parents full visibility and control over their child's AI interactions. 5-layer AIBguard protection, crisis detection, parent dashboard, no child accounts. Safe AI for kids ages 4–15.",
+    "AIBfamily gives parents full control over their child's AI interactions. 5-layer AIBguard protection, real-time crisis detection, parent dashboard, COPPA compliant. Safe AI for kids ages 4–15.",
   keywords: [
-    "family AI safety", "parental control AI", "safe AI for kids",
-    "child AI protection", "AI monitoring parents", "AIBfamily",
-    "AIBguard", "kids AI app", "parent dashboard AI", "AI for children",
-    "child online safety", "family AI subscription",
+    "safe AI for kids", "parental control AI", "child-safe chatbot",
+    "family AI assistant", "AI monitoring for parents", "kids AI app",
+    "parent dashboard AI", "COPPA compliant AI for families",
+    "UK Children Code AI", "child online safety AI", "AIBfamily",
+    "safe internet for children", "AI homework helper safe",
+    "children AI protection", "family AI subscription",
   ],
   authors: [{ name: "AIBfamily", url: "https://aibfamily.cloud" }],
   creator: "AIBlab — SAY TO PAY s.r.o.",
   alternates: { canonical: "https://aibfamily.cloud" },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
-    title: "AIBfamily — Safe AI for Families & Kids Ages 4–15",
+    title: "AIBfamily — Safe AI for Kids Ages 4–15",
     description:
       "5 layers of protection. Parent dashboard. Crisis detection. No child accounts. Peace of mind, finally.",
     url: "https://aibfamily.cloud",
@@ -29,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://aibfamily.cloud/og-image.png",
+        url: "https://aibfamily.cloud/og-image.svg",
         width: 1200,
         height: 630,
         alt: "AIBfamily — Safe AI for Kids",
@@ -38,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIBfamily — Safe AI for Families & Kids Ages 4–15",
+    title: "AIBfamily — Safe AI for Kids Ages 4–15",
     description: "5 layers of protection. Parent dashboard. Crisis detection. No child accounts.",
-    images: ["https://aibfamily.cloud/og-image.png"],
+    images: ["https://aibfamily.cloud/og-image.svg"],
   },
   robots: {
     index: true,
@@ -50,6 +57,45 @@ export const metadata: Metadata = {
 };
 
 const GA_ID = "G-LP9LSDLSHN";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aibfamily.cloud/#organization",
+      name: "AIBfamily",
+      url: "https://aibfamily.cloud",
+      logo: "https://aibfamily.cloud/logo.svg",
+      description: "Safe AI for families — 5-layer AIBguard protection for children ages 4–15.",
+      parentOrganization: {
+        "@type": "Organization",
+        name: "SAY TO PAY s.r.o.",
+        url: "https://aiblab.info",
+      },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://aibfamily.cloud/#software",
+      name: "AIBfamily",
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Web",
+      url: "https://aibfamily.cloud",
+      offers: {
+        "@type": "Offer",
+        price: "9.99",
+        priceCurrency: "USD",
+      },
+      description:
+        "COPPA compliant, parental-controlled AI chat for children aged 4–15 with real-time crisis detection.",
+      audience: {
+        "@type": "PeopleAudience",
+        suggestedMinAge: 4,
+        suggestedMaxAge: 15,
+      },
+    },
+  ],
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -67,6 +113,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${GA_ID}', { page_path: window.location.pathname });
           `}
         </Script>
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body>{children}</body>
     </html>
