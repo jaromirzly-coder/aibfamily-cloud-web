@@ -50,8 +50,8 @@ const layers = [
         <circle cx="11" cy="11" r="3" stroke="currentColor" strokeWidth="1.5"/>
       </svg>
     ),
-    title: "Crisis Detection & 116 111",
-    body: "Automatic detection of self-harm language, suicidal ideation, and abuse signals. You receive an immediate push notification and — where configured — the system connects to crisis line 116 111.",
+    title: "Crisis Detection & 116 111 (EU) · 988 Lifeline (US)",
+    body: "Automatic detection of self-harm language, suicidal ideation, and abuse signals. You receive an immediate push notification and — where configured — the system connects to crisis line 116 111 (EU) · 988 Lifeline (US).",
     accent: "from-brand-orange/20",
     border: "border-brand-orange/30",
     iconColor: "text-brand-orange",

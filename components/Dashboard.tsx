@@ -47,7 +47,7 @@ export default function Dashboard() {
           </div>
 
           {/* Dashboard mockup */}
-          <div className="glass rounded-2xl p-6">
+          <div className="glass rounded-2xl p-6" aria-label="AIBfamily parental control AI dashboard — safe AI for kids with real-time alerts">
             <div className="flex items-center justify-between mb-5">
               <div>
                 <div className="text-sm font-bold text-white">AIBfamily Dashboard</div>

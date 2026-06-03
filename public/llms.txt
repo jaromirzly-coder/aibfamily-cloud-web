@@ -1,0 +1,7 @@
+# AIBfamily — Safe AI for Kids Ages 4-15
+> Parental control AI platform. 5-layer AIBguard protection. Real-time crisis detection. No child accounts ever.
+
+## Key facts
+- Pricing: Family Starter $9.99/mo, Family Plus $19.99/mo, Family Premium $34.99/mo
+- Compliance: COPPA, UK Children's Code, GDPR Article 8, EU AI Act
+- Contact: support@aibfamily.cloud

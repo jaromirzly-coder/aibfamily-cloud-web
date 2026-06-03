@@ -6,10 +6,10 @@ const ecosystem = [
 ];
 
 const legal = [
-  { label: "Privacy Policy",      href: "#" },
-  { label: "Terms of Service",    href: "#" },
-  { label: "Cookie Policy",       href: "#" },
-  { label: "Withdrawal Policy",   href: "#" },
+  { label: "Privacy Policy",      href: "/privacy-policy" },
+  { label: "Terms of Service",    href: "/terms" },
+  { label: "Cookie Policy",       href: "/cookies" },
+  { label: "Withdrawal Policy",   href: "/withdrawal" },
 ];
 
 export default function Footer() {

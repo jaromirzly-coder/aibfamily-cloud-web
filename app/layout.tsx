@@ -97,6 +97,61 @@ const jsonLd = {
   ],
 };
 
+const jsonLdFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does my child need to create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Your child never registers, never enters an email, and never creates a password. They access AIBfamily through a QR code you print and place at home. That's it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What ages is AIBfamily suitable for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AIBfamily is designed for children aged 4–15. Each child profile has age-appropriate guardrails — what's suitable for a 14-year-old is very different from what's suitable for a 5-year-old."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the AI detects a crisis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When AIBguard issues a CRITICAL verdict — detecting self-harm language, signs of abuse, or extreme distress — the AI's response is blocked and you receive an immediate push notification. Where configured, the system also initiates contact with crisis helpline 116 111 (EU) · 988 Lifeline (US)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my family's data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All data is stored exclusively in EU data centres (Frankfurt). It is encrypted per-family with AES-256 and never transferred outside the EU. We do not sell or share your data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel my subscription at any time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There are no long-term commitments. You can cancel from your account settings at any time, effective at the end of the current billing period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is AIBfamily different from just using ChatGPT or Gemini?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commercial AI tools have no child-specific safety layers, no parent visibility, no crisis detection, and no compliance with EU AI Act requirements. AIBfamily is purpose-built for child safety — every component exists to protect your child, not just to answer questions."
+      }
+    }
+  ]
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -118,6 +173,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }}
         />
       </head>
       <body>{children}</body>

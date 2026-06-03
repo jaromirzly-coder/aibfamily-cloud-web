@@ -4,7 +4,7 @@ const badges = [
   { label: "GDPR Article 8",         sub: "Under-16 data" },
   { label: "EU AI Act",              sub: "Article 28b" },
   { label: "AES-256 Encrypted",      sub: "Per-family key" },
-  { label: "Crisis Line 116 111",    sub: "Linked" },
+  { label: "Crisis Line 116 111 (EU) · 988 Lifeline (US)",    sub: "Linked" },
 ];
 
 export default function TrustBar() {

@@ -39,7 +39,7 @@ export default function Hero() {
                 "Ages 4–15",
                 "2-minute setup",
                 "EU data only",
-                "Crisis line 116 111",
+                "Crisis line 116 111 (EU) · 988 Lifeline (US)",
               ].map((t) => (
                 <span key={t}
                   className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/[0.05] border border-white/[0.09] px-3 py-1.5 rounded-full">
@@ -85,7 +85,7 @@ export default function Hero() {
           </div>
 
           {/* Right: parent dashboard mockup placeholder */}
-          <div className="hidden lg:block animate-fade-up animate-delay-300">
+          <div className="hidden lg:block animate-fade-up animate-delay-300" aria-label="AIBfamily parent dashboard showing real-time AI safety alerts and crisis detection for children ages 4-15">
             {/* REPLACE WITH: /public/hero-parent-dashboard.png · 1200×900 · parent safety dashboard */}
             <div className="relative rounded-2xl overflow-hidden border border-white/[0.09] bg-gradient-to-br from-fam-900/80 to-fam-950/90 shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
               style={{ aspectRatio: "4/3" }}>

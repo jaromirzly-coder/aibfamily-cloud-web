@@ -44,9 +44,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer"
+          <a href="#waitlist"
             className="text-sm font-medium text-slate-400 hover:text-white transition-colors px-3 py-2">
-            Sign in
+            Join Waitlist →
           </a>
           <a href="#pricing"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-coral to-brand-violet text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">

@@ -11,7 +11,7 @@ const plans = [
       "All 5 AIBguard protection layers",
       "Parent dashboard",
       "Push alerts (< 3s)",
-      "Crisis detection & 116 111",
+      "Crisis detection & 116 111 (EU) · 988 Lifeline (US)",
       "Daily safety summary email",
       "EU data residency",
     ],
@@ -32,7 +32,7 @@ const plans = [
       "All 5 AIBguard protection layers",
       "Per-child dashboards",
       "Push + SMS alerts",
-      "Crisis detection & 116 111",
+      "Crisis detection & 116 111 (EU) · 988 Lifeline (US)",
       "Behavioural trend reports",
       "Encrypted teacher channel",
       "Priority support",
@@ -54,7 +54,7 @@ const plans = [
       "All 5 AIBguard protection layers",
       "Advanced analytics & reports",
       "Push + SMS + email alerts",
-      "Crisis detection & 116 111",
+      "Crisis detection & 116 111 (EU) · 988 Lifeline (US)",
       "Encrypted teacher channel",
       "Learning progress tracking",
       "Dedicated family support",
@@ -124,9 +124,9 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer"
+              <a href="#waitlist"
                 className={`block text-center py-3.5 rounded-xl font-bold text-sm transition-all ${p.ctaStyle}`}>
-                {p.cta}
+                Join Waitlist →
               </a>
             </div>
           ))}

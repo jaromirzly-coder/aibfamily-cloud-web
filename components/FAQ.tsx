@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "What happens when the AI detects a crisis?",
-    a: "When AIBguard issues a CRITICAL verdict — detecting self-harm language, signs of abuse, or extreme distress — the AI's response is blocked and you receive an immediate push notification. Where configured, the system also initiates contact with crisis helpline 116 111.",
+    a: "When AIBguard issues a CRITICAL verdict — detecting self-harm language, signs of abuse, or extreme distress — the AI's response is blocked and you receive an immediate push notification. Where configured, the system also initiates contact with crisis helpline 116 111 (EU) · 988 Lifeline (US).",
   },
   {
     q: "Where is my family's data stored?",
