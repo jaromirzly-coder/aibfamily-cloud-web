@@ -49,7 +49,7 @@ const features = [
       </svg>
     ),
     title: "Age Profiles 4–15",
-    body: "Create separate profiles for each child with age-appropriate guardrails. A 5-year-old&apos;s experience is very different from a 13-year-old&apos;s.",
+    body: "Create separate profiles for each child with age-appropriate guardrails. A 5-year-old's experience is very different from a 13-year-old's.",
     tag: "Profiles",
     accent: "text-brand-purple bg-brand-purple/10 border-brand-purple/20",
   },
@@ -71,7 +71,7 @@ const features = [
       </svg>
     ),
     title: "Encrypted Teacher Channel",
-    body: "Communicate directly with your child&apos;s teacher through an encrypted channel within AIBfamily. No third-party messaging apps.",
+    body: "Communicate directly with your child's teacher through an encrypted channel within AIBfamily. No third-party messaging apps.",
     tag: "Communication",
     accent: "text-brand-violet bg-brand-violet/10 border-brand-violet/20",
   },
@@ -83,7 +83,7 @@ const features = [
       </svg>
     ),
     title: "Daily Safety Summary",
-    body: "Every morning, receive a digest of the previous day&apos;s activity: sessions, verdicts, topics, and any flagged moments.",
+    body: "Every morning, receive a digest of the previous day's activity: sessions, verdicts, topics, and any flagged moments.",
     tag: "Reports",
     accent: "text-brand-coral bg-brand-coral/10 border-brand-coral/20",
   },
@@ -111,7 +111,7 @@ export default function Features() {
         <div className="text-center mb-16">
           <span className="inline-block text-xs font-bold text-brand-violet uppercase tracking-[0.2em] mb-4">For Parents</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            You&apos;re always in the room.<br/>
+            You're always in the room.<br/>
             <span className="gradient-text">Invisibly.</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">

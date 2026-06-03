@@ -86,7 +86,7 @@ export default function Protection() {
             <span className="gradient-text">and anything harmful.</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            Each layer is independent. All five run simultaneously. If any layer flags a concern, you&apos;re notified within 3 seconds.
+            Each layer is independent. All five run simultaneously. If any layer flags a concern, you're notified within 3 seconds.
           </p>
         </div>
 

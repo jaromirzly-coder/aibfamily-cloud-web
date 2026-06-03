@@ -10,7 +10,7 @@ export default function Dashboard() {
             <span className="inline-block text-xs font-bold text-brand-coral uppercase tracking-[0.2em] mb-4">Parent Dashboard</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5 leading-tight">
               Everything you need.<br/>
-              <span className="gradient-text">Nothing you don&apos;t.</span>
+              <span className="gradient-text">Nothing you don't.</span>
             </h2>
             <p className="text-slate-400 leading-relaxed mb-7">
               The AIBfamily dashboard is designed for busy parents, not data scientists. At a glance you can see
@@ -75,7 +75,7 @@ export default function Dashboard() {
             </div>
 
             <div className="bg-white/[0.03] border border-white/[0.06] rounded-xl p-4">
-              <div className="text-xs text-slate-500 mb-3">Today&apos;s activity topics</div>
+              <div className="text-xs text-slate-500 mb-3">Today's activity topics</div>
               <div className="space-y-2.5">
                 {[
                   { topic: "Maths homework", pct: 45, color: "bg-brand-violet" },

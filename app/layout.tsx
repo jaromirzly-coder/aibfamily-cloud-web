@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://aibfamily.cloud/og-image.svg",
+        url: "https://aibfamily.cloud/og-image.png",
         width: 1200,
         height: 630,
         alt: "AIBfamily — Safe AI for Kids",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIBfamily — Safe AI for Kids Ages 4–15",
     description: "5 layers of protection. Parent dashboard. Crisis detection. No child accounts.",
-    images: ["https://aibfamily.cloud/og-image.svg"],
+    images: ["https://aibfamily.cloud/og-image.png"],
   },
   robots: {
     index: true,
