@@ -84,84 +84,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: parent dashboard mockup placeholder */}
-          <div className="hidden lg:block animate-fade-up animate-delay-300" aria-label="AIBfamily parent dashboard showing real-time AI safety alerts and crisis detection for children ages 4-15">
-            {/* REPLACE WITH: /public/hero-parent-dashboard.png · 1200×900 · parent safety dashboard */}
-            <div className="relative rounded-2xl overflow-hidden border border-white/[0.09] bg-gradient-to-br from-fam-900/80 to-fam-950/90 shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
-              style={{ aspectRatio: "4/3" }}>
-              {/* Browser chrome */}
-              <div className="h-9 bg-white/[0.04] border-b border-white/[0.06] flex items-center px-4 gap-2">
-                <div className="flex gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-red-500/40" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/40" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-green-500/40" />
-                </div>
-                <div className="flex-1 mx-4 h-5 bg-white/[0.04] rounded-md border border-white/[0.06] flex items-center px-3">
-                  <span className="text-[9px] text-slate-600 font-mono">app.aibfamily.cloud/dashboard</span>
-                </div>
-              </div>
-              {/* Fake parent dashboard */}
-              <div className="p-4 space-y-3">
-                <div className="flex items-center justify-between">
-                  <div className="h-5 w-32 bg-white/[0.06] rounded-md" />
-                  <div className="h-6 px-3 bg-brand-emerald/10 border border-brand-emerald/20 rounded-full flex items-center gap-1.5">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-pulse" />
-                    <div className="h-2 w-10 bg-brand-emerald/30 rounded" />
-                  </div>
-                </div>
-                {/* Child cards */}
-                <div className="grid grid-cols-2 gap-2">
-                  {[
-                    { c: "bg-brand-violet/10 border-brand-violet/15", label: "Emma, 8", status: "All PASS", statusC: "bg-brand-emerald/10 text-brand-emerald" },
-                    { c: "bg-brand-coral/10 border-brand-coral/15", label: "Oliver, 12", status: "1 ALERT", statusC: "bg-brand-orange/10 text-brand-orange" },
-                  ].map((ch) => (
-                    <div key={ch.label} className={`${ch.c} border rounded-xl p-3 flex items-center justify-between`}>
-                      <div>
-                        <div className="h-2.5 w-16 bg-white/[0.1] rounded mb-1.5" />
-                        <div className="h-2 w-12 bg-white/[0.05] rounded" />
-                      </div>
-                      <div className={`text-[9px] font-semibold px-2 py-0.5 rounded-full ${ch.statusC}`}>{ch.status}</div>
-                    </div>
-                  ))}
-                </div>
-                {/* Activity bars */}
-                <div className="bg-white/[0.02] border border-white/[0.05] rounded-xl p-3 space-y-2">
-                  {[
-                    { w: 60, c: "bg-brand-violet" },
-                    { w: 40, c: "bg-brand-coral" },
-                    { w: 25, c: "bg-brand-orange" },
-                  ].map((b, i) => (
-                    <div key={i} className="flex items-center gap-2">
-                      <div className="h-2 bg-white/[0.04] rounded-full flex-1">
-                        <div className={`h-2 ${b.c} rounded-full`} style={{ width: `${b.w}%` }} />
-                      </div>
-                      <div className="h-2 w-6 bg-white/[0.06] rounded" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="absolute inset-0 flex items-end justify-end p-3 pointer-events-none">
-                <span className="text-[9px] font-mono text-white/15 bg-black/20 px-2 py-1 rounded">
-                  hero-parent-dashboard.png · 1200×900
-                </span>
-              </div>
-            </div>
-            {/* Floating alert badge */}
-            <div className="absolute -bottom-4 -right-4 glass rounded-2xl p-3 border border-brand-orange/20 shadow-lg max-w-[160px]">
-              <div className="flex items-start gap-2">
-                <div className="w-7 h-7 bg-brand-orange/15 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M6 1L11 9H1L6 1Z" stroke="#f97316" strokeWidth="1.2" strokeLinejoin="round"/>
-                    <path d="M6 5v2" stroke="#f97316" strokeWidth="1.2" strokeLinecap="round"/>
-                    <circle cx="6" cy="8.5" r="0.5" fill="#f97316"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-[9px] font-bold text-white">ALERT detected</div>
-                  <div className="text-[8px] text-slate-500 mt-0.5">Oliver · notified instantly</div>
-                </div>
-              </div>
-            </div>
+          {/* Right: parent dashboard mockup */}
+          <div className="hidden lg:block animate-fade-up animate-delay-300">
+            <img
+              src="/hero-parent-dashboard.png"
+              alt="AIBfamily parent dashboard showing real-time AI safety alerts and crisis detection for children ages 4-15"
+              width="1200"
+              height="900"
+              className="w-full h-auto rounded-2xl shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
+            />
           </div>
 
         </div>
