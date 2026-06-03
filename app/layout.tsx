@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "https://aibfamily.cloud/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AIBfamily — Safe AI for Kids",
+        alt: "AIBfamily parent dashboard — 5-layer AIBguard protection for children ages 4-15, parental control AI",
       },
     ],
   },
