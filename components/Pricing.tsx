@@ -134,7 +134,7 @@ export default function Pricing() {
 
         <p className="text-center text-sm text-slate-500 mt-8">
           All prices in USD · GBP pricing available on checkout · VAT may apply.{" "}
-          <a href="mailto:info@aiblab.cz" className="text-brand-coral hover:underline">Need help choosing?</a>
+          <a href="mailto:support@aibfamily.cloud" className="text-brand-coral hover:underline">Need help choosing?</a>
         </p>
       </div>
     </section>

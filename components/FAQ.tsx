@@ -64,7 +64,7 @@ export default function FAQ() {
 
         <div className="mt-12 text-center">
           <p className="text-slate-500 text-sm mb-4">Still have questions?</p>
-          <a href="mailto:info@aiblab.cz"
+          <a href="mailto:support@aibfamily.cloud"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-coral to-brand-violet text-white px-6 py-3 rounded-xl font-semibold text-sm hover:opacity-90 transition-opacity">
             Email us →
           </a>

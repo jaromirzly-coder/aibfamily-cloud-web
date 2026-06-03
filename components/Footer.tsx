@@ -81,7 +81,8 @@ export default function Footer() {
         <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-600">© 2026 AIBfamily · AIBlab · SAY TO PAY s.r.o. All rights reserved.</p>
           <div className="flex items-center gap-5 text-xs text-slate-600">
-            <a href="mailto:info@aiblab.cz" className="hover:text-brand-coral transition-colors">info@aiblab.cz</a>
+            <a href="mailto:info@aibfamily.cloud" className="hover:text-brand-coral transition-colors">info@aibfamily.cloud</a>
+            <a href="mailto:support@aibfamily.cloud" className="hover:text-brand-coral transition-colors">support@aibfamily.cloud</a>
             <a href="https://aibguardian.info" target="_blank" rel="noopener noreferrer" className="hover:text-brand-coral transition-colors">Powered by AIBguardian</a>
           </div>
         </div>
