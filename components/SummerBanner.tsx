@@ -1,6 +1,6 @@
 export default function SummerBanner() {
   return (
-    <div className="relative bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-400 py-3.5 px-4 text-center flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+    <div className="relative mt-16 bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-400 py-3.5 px-4 text-center flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
       <span className="text-sm font-bold text-amber-950">
         🌞 Summer Start — 2 months for 29 USD. Launching July 1, 2026.
       </span>
