@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="#waitlist"
-            className="text-sm font-medium text-slate-400 hover:text-white transition-colors px-3 py-2">
+            className="text-sm font-medium text-white hover:text-brand-coral transition-colors px-3 py-2">
             Join Waitlist →
           </a>
           <a href="#pricing"
