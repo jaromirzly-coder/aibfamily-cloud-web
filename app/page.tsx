@@ -9,6 +9,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import AIB1Section from "@/components/AIB1Section";
+import AIBlabEcosystem from "@/components/AIBlabEcosystem";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <AIB1Section />
+      <AIBlabEcosystem />
       <Footer />
     </main>
   );
