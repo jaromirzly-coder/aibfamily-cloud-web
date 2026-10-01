@@ -40,9 +40,9 @@ export default function Dashboard() {
                 </li>
               ))}
             </ul>
-            <a href="#pricing"
+            <a href="https://aibeva.com"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-coral to-brand-violet text-white px-6 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity">
-              Get Dashboard Access →
+              Meet AIBEVA, available now →
             </a>
           </div>
 

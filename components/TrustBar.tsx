@@ -1,9 +1,9 @@
 const badges = [
-  { label: "COPPA Compliant",        sub: "Child privacy" },
+  { label: "Designed for COPPA",     sub: "Child privacy" },
   { label: "UK Children's Code",     sub: "ICO standard" },
   { label: "GDPR Article 8",         sub: "Under-16 data" },
   { label: "EU AI Act",              sub: "Article 28b" },
-  { label: "AES-256 Encrypted",      sub: "Per-family key" },
+  { label: "AES-256 by design",      sub: "Per-family key" },
   { label: "Crisis Line 116 111 (EU) · 988 Lifeline (US)",    sub: "Linked" },
 ];
 

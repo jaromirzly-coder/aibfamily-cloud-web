@@ -29,7 +29,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-4">
-              Safe AI for families. 5-layer AIBguard protection for children ages 4–15. EU data only.
+              In development. Safe AI for families, designed for children ages 4–15. EU data only.
             </p>
             <p className="text-slate-600 text-xs">AIBlab · SAY TO PAY s.r.o.</p>
             <p className="text-slate-600 text-xs">IČO: 08694222 · Czech Republic · EU</p>
@@ -41,7 +41,6 @@ export default function Footer() {
               {[
                 { label: "5-Layer Protection", href: "#protection" },
                 { label: "Parent Dashboard",   href: "#dashboard" },
-                { label: "Pricing",            href: "#pricing" },
                 { label: "FAQ",                href: "#faq" },
               ].map((l) => (
                 <li key={l.label}>

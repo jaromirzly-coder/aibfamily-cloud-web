@@ -5,7 +5,6 @@ const links = [
   { label: "Protection",  href: "#protection" },
   { label: "Features",    href: "#features" },
   { label: "Dashboard",   href: "#dashboard" },
-  { label: "Pricing",     href: "#pricing" },
 ];
 
 export default function Navbar() {
@@ -44,13 +43,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#waitlist"
-            className="text-sm font-medium text-white hover:text-brand-coral transition-colors px-3 py-2">
-            Join Waitlist →
-          </a>
-          <a href="#pricing"
+          <a href="https://aibeva.com"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-coral to-brand-violet text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
-            Start Free Trial
+            Meet AIBEVA
           </a>
         </div>
 
@@ -72,9 +67,9 @@ export default function Navbar() {
             </a>
           ))}
           <div className="border-t border-white/[0.08] mt-2 pt-2">
-            <a href="#pricing" onClick={() => setOpen(false)}
+            <a href="https://aibeva.com" onClick={() => setOpen(false)}
               className="block w-full text-center bg-gradient-to-r from-brand-coral to-brand-violet text-white py-3 rounded-xl text-sm font-semibold">
-              Start Free Trial →
+              Meet AIBEVA →
             </a>
           </div>
         </div>

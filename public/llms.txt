@@ -1,7 +1,11 @@
-# AIBfamily — Safe AI for Kids Ages 4-15
-> Parental control AI platform. 5-layer AIBguard protection. Real-time crisis detection. No child accounts ever.
+# AIBfamily — safe AI for kids (in development)
+> AIBfamily is in development. It is being built on AIB.core, the engine behind AIBEVA, and is made for families. It is not available for purchase yet.
 
 ## Key facts
-- Pricing: Family Starter $9.99/mo, Family Plus $19.99/mo, Family Premium $34.99/mo
-- Compliance: COPPA, UK Children's Code, GDPR Article 8, EU AI Act
-- Contact: support@aibfamily.cloud
+- Status: in development, not yet available
+- For: children aged 4–15, with a parent dashboard
+- Designed for: COPPA, UK Children's Code, GDPR Article 8, EU AI Act
+- No child accounts by design
+- Built by SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU
+- Available now from the same company: AIBEVA, a personal AI assistant for Windows — https://aibeva.com
+- Contact: info@aiblab.info

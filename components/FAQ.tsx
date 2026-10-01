@@ -16,11 +16,7 @@ const faqs = [
   },
   {
     q: "Where is my family's data stored?",
-    a: "All data is stored exclusively in EU data centres (Frankfurt). It is encrypted per-family with AES-256 and never transferred outside the EU. We do not sell or share your data.",
-  },
-  {
-    q: "Can I cancel my subscription at any time?",
-    a: "Yes. There are no long-term commitments. You can cancel from your account settings at any time, effective at the end of the current billing period.",
+    a: "All data will be stored exclusively in EU data centres. It will be encrypted per-family with AES-256 and never transferred outside the EU. We do not sell or share your data.",
   },
   {
     q: "How is AIBfamily different from just using ChatGPT or Gemini?",

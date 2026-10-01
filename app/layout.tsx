@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     template: "%s | AIBfamily",
   },
   description:
-    "AIBfamily gives parents full control over their child's AI interactions. 5-layer AIBguard protection, real-time crisis detection, parent dashboard, COPPA compliant. Safe AI for kids ages 4–15.",
+    "In development: AIBfamily, safe AI for kids ages 4–15 with a parent dashboard, built on AIB.core, the engine behind AIBEVA. Designed for COPPA and the UK Children's Code.",
   keywords: [
     "safe AI for kids", "parental control AI", "child-safe chatbot",
     "family AI assistant", "AI monitoring for parents", "kids AI app",
-    "parent dashboard AI", "COPPA compliant AI for families",
+    "parent dashboard AI", "COPPA AI for families",
     "UK Children Code AI", "child online safety AI", "AIBfamily",
     "safe internet for children", "AI homework helper safe",
     "children AI protection", "family AI subscription",
@@ -81,13 +81,8 @@ const jsonLd = {
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "Web",
       url: "https://aibfamily.cloud",
-      offers: {
-        "@type": "Offer",
-        price: "9.99",
-        priceCurrency: "USD",
-      },
       description:
-        "COPPA compliant, parental-controlled AI chat for children aged 4–15 with real-time crisis detection.",
+        "In development: parental-controlled AI chat for children aged 4–15, built on AIB.core, the engine behind AIBEVA. Designed for COPPA.",
       audience: {
         "@type": "PeopleAudience",
         suggestedMinAge: 4,
@@ -130,15 +125,7 @@ const jsonLdFAQ = {
       "name": "Where is my family's data stored?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All data is stored exclusively in EU data centres (Frankfurt). It is encrypted per-family with AES-256 and never transferred outside the EU. We do not sell or share your data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I cancel my subscription at any time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. There are no long-term commitments. You can cancel from your account settings at any time, effective at the end of the current billing period."
+        "text": "All data will be stored exclusively in EU data centres. It will be encrypted per-family with AES-256 and never transferred outside the EU. We do not sell or share your data."
       }
     },
     {
