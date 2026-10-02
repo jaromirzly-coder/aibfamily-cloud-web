@@ -28,11 +28,7 @@ export default function Hero() {
               <span className="text-white">you demand.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">
-              AIBfamily will give your child a safe, guided AI companion — and give you
-              complete visibility into every interaction. Designed for COPPA and the UK
-              Children's Code. No child account, by design.
-            </p>
+            <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">{"AIBfamily — family mode: parents see what they need, children keep privacy appropriate to their age. Being built on AIB.core."}</p>
 
             <div className="flex flex-wrap gap-2 mb-10 animate-fade-up animate-delay-200">
               {[

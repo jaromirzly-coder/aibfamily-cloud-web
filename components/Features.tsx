@@ -9,22 +9,11 @@ const features = [
       </svg>
     ),
     title: "Real-Time Parent Dashboard",
-    body: "See every conversation your child has — what they asked, what the AI answered, and the safety verdict. Refreshes live.",
+    body: "Family mode: a parent sees what they need, a child keeps privacy appropriate to their age.",
     tag: "Dashboard",
     accent: "text-brand-violet bg-brand-violet/10 border-brand-violet/20",
   },
-  {
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: "3-Second Push Alerts",
-    body: "When AIBguard issues an ALERT or CRITICAL verdict, you receive a push notification within 3 seconds — before any harm can occur.",
-    tag: "Alerts",
-    accent: "text-brand-orange bg-brand-orange/10 border-brand-orange/20",
-  },
+
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -75,18 +64,7 @@ const features = [
     tag: "Communication",
     accent: "text-brand-violet bg-brand-violet/10 border-brand-violet/20",
   },
-  {
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" strokeWidth="1.5"/>
-        <path d="M14 2v6h6M8 13h6M8 17h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: "Daily Safety Summary",
-    body: "Every morning, receive a digest of the previous day's activity: sessions, verdicts, topics, and any flagged moments.",
-    tag: "Reports",
-    accent: "text-brand-coral bg-brand-coral/10 border-brand-coral/20",
-  },
+
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">

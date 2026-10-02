@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     template: "%s | AIBfamily",
   },
   description:
-    "In development: AIBfamily, safe AI for kids ages 4–15 with a parent dashboard, built on AIB.core, the engine behind AIBEVA. Designed for COPPA and the UK Children's Code.",
+    "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
   keywords: [
     "safe AI for kids", "parental control AI", "child-safe chatbot",
-    "family AI assistant", "AI monitoring for parents", "kids AI app",
+    "AI monitoring for parents", "kids AI app",
     "parent dashboard AI", "COPPA AI for families",
     "UK Children Code AI", "child online safety AI", "AIBfamily",
     "safe internet for children", "AI homework helper safe",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBfamily — Safe AI for Kids Ages 4–15",
     description:
-      "5 layers of protection. Parent dashboard. Crisis detection. No child accounts. Peace of mind, finally.",
+      "AIBfamily — family mode: parents see what they need, children keep privacy appropriate to their age. Being built on AIB.core.",
     url: "https://aibfamily.cloud",
     siteName: "AIBfamily",
     type: "website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AIBfamily — Safe AI for Kids Ages 4–15",
-    description: "5 layers of protection. Parent dashboard. Crisis detection. No child accounts.",
+    description: "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
     images: ["https://aibfamily.cloud/og-image.png"],
   },
   robots: {
@@ -67,10 +67,11 @@ const jsonLd = {
       name: "AIBfamily",
       url: "https://aibfamily.cloud",
       logo: "https://aibfamily.cloud/logo.svg",
-      description: "Safe AI for families — 5-layer AIBguard protection for children ages 4–15.",
+      description: "AIBfamily — family mode: parents see what they need, children keep privacy appropriate to their age. Being built on AIB.core.",
       parentOrganization: {
         "@type": "Organization",
         name: "SAY TO PAY s.r.o.",
+        description: "AIBlab (SAY TO PAY s.r.o., Czech Republic, EU) builds AIBEVA — an intelligent being for Windows — on AIB.core, runs the AIBSN registry of AI identities and AIBguardian for AI safety; AIBgin and AIBfamily are in development.",
         url: "https://aiblab.info",
       },
     },
@@ -82,7 +83,7 @@ const jsonLd = {
       operatingSystem: "Web",
       url: "https://aibfamily.cloud",
       description:
-        "In development: parental-controlled AI chat for children aged 4–15, built on AIB.core, the engine behind AIBEVA. Designed for COPPA.",
+        "AIBfamily — family mode: parents see what they need, children keep privacy appropriate to their age. Being built on AIB.core.",
       audience: {
         "@type": "PeopleAudience",
         suggestedMinAge: 4,
@@ -117,7 +118,7 @@ const jsonLdFAQ = {
       "name": "What happens when the AI detects a crisis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When AIBguard issues a CRITICAL verdict — detecting self-harm language, signs of abuse, or extreme distress — the AI's response is blocked and you receive an immediate push notification. Where configured, the system also initiates contact with crisis helpline 116 111 (EU) · 988 Lifeline (US)."
+        "text": "Where configured, the system also initiates contact with crisis helpline 116 111 (EU) · 988 Lifeline (US)."
       }
     },
     {

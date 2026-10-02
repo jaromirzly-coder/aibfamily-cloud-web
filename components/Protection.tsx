@@ -22,7 +22,7 @@ const layers = [
       </svg>
     ),
     title: "AIBguard Middleware (Fail-Closed)",
-    body: "Every AI response is audited in real time before your child sees it. If any error occurs, the response is blocked — safety never degrades. PASS, ALERT, or CRITICAL verdict on every message.",
+    body: "Every AI response is audited in real time before your child sees it. If any error occurs, the response is blocked — safety never degrades.",
     accent: "from-brand-coral/20",
     border: "border-brand-coral/30",
     iconColor: "text-brand-coral",
