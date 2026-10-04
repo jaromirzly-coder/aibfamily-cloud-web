@@ -1,11 +1,18 @@
 import { MetadataRoute } from "next";
+import { SITE } from "@/lib/site";
+
+const PAGES: { path: string; priority: number; changeFrequency: "monthly" | "yearly" }[] = [
+  { path: "",                priority: 1,   changeFrequency: "monthly" },
+  { path: "/imprint",        priority: 0.3, changeFrequency: "yearly" },
+  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/terms",          priority: 0.3, changeFrequency: "yearly" },
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    { url: "https://aibfamily.cloud", lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
-    { url: "https://aibfamily.cloud/#protection", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: "https://aibfamily.cloud/#features", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: "https://aibfamily.cloud/#dashboard", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: "https://aibfamily.cloud/#faq", lastModified: new Date(), changeFrequency: "yearly", priority: 0.7 },
-  ];
+  return PAGES.map((p) => ({
+    url: `${SITE.url}${p.path}`,
+    lastModified: new Date("2026-10-04"),
+    changeFrequency: p.changeFrequency,
+    priority: p.priority,
+  }));
 }

@@ -1,11 +1,10 @@
-# AIBfamily — safe AI for kids (in development)
-> AIBfamily is in development. It is being built on AIB.core, the engine behind AIBEVA, and is made for families. It is not available for purchase yet.
+# AIBfamily — family mode for AIBs (in development)
+> Parents see what they need. Children keep their privacy. AIBfamily is in development and being built on AIB.core, the engine behind AIBEVA.
 
 ## Key facts
-- Status: in development, not yet available
-- For: children aged 4–15, with a parent dashboard
-- Designed for: COPPA, UK Children's Code, GDPR Article 8, EU AI Act
-- No child accounts by design
-- Built by SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU
-- Available now from the same company: AIBEVA — an intelligent being for Windows. Powered by AIB.core. — https://aibeva.com
+- Status: in development. Not yet available.
+- Every family member has their own intelligent being; only what is explicitly allowed is shared.
+- Safe by design, with the Guardian layer (AIBguardian) inside; designed with the EU AI Act and GDPR in mind.
 - Contact: info@aiblab.info
+- AIBEVA (for adults, 18+) is free for Windows today: https://aibeva.com/download
+- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222

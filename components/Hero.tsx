@@ -1,94 +1,38 @@
+import { IMAGES } from "./images";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-fam-950 noise pt-16">
-      <div className="absolute inset-0 bg-hero-mesh pointer-events-none" />
-      <div className="absolute inset-0 opacity-[0.035]" style={{
-        backgroundImage: "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
-        backgroundSize: "72px 72px"
-      }} />
-      <div className="absolute top-1/4 left-1/5 w-[500px] h-[500px] bg-brand-violet/[0.18] rounded-full blur-[140px] pointer-events-none animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/5 w-96 h-96 bg-brand-coral/[0.12] rounded-full blur-[120px] pointer-events-none animate-pulse-slow animate-delay-400" />
+    <section className="relative overflow-hidden bg-navy-950">
+      <img
+        src={IMAGES.yourPc.src}
+        alt="An AIB lives on your own computer"
+        width={IMAGES.yourPc.width}
+        height={IMAGES.yourPc.height}
+        className="absolute inset-0 w-full h-full object-cover object-[75%_center] opacity-35 lg:opacity-60"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/30 pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy-950 to-transparent pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-          {/* Left: copy */}
-          <div>
-            <div className="inline-flex items-start gap-2.5 glass rounded-2xl px-4 py-2.5 mb-8 max-w-xl animate-fade-up">
-              <span className="relative flex h-2 w-2 mt-1 shrink-0">
-                <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
-              </span>
-              <span className="text-xs font-semibold text-slate-300 tracking-wide">In development — AIBfamily is being built on AIB.core, the engine behind AIBEVA, made for families.</span>
-            </div>
-
-            <h1 className="text-5xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.05] tracking-[-0.02em] mb-6 animate-fade-up animate-delay-100">
-              <span className="text-white">The AI your child</span><br/>
-              <span className="gradient-text">loves. The safety</span><br/>
-              <span className="text-white">you demand.</span>
-            </h1>
-
-            <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-6 animate-fade-up animate-delay-200 max-w-xl">{"AIBfamily — family mode: parents see what they need, children keep privacy appropriate to their age. Being built on AIB.core."}</p>
-
-            <div className="flex flex-wrap gap-2 mb-10 animate-fade-up animate-delay-200">
-              {[
-                "Ages 4–15",
-                "EU data only",
-                "Crisis line 116 111 (EU) · 988 Lifeline (US)",
-              ].map((t) => (
-                <span key={t}
-                  className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/[0.05] border border-white/[0.09] px-3 py-1.5 rounded-full">
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2 2 4-4" stroke="#f472b6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  {t}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 mb-14 animate-fade-up animate-delay-300">
-              <a href="https://aibeva.com"
-                className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-coral to-brand-violet text-white px-8 py-4 rounded-2xl font-bold text-base hover:opacity-90 transition-all hover:-translate-y-0.5">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M9 16C9 16 2 11.5 2 7C2 4.8 3.8 3 6 3C7.1 3 8.1 3.5 9 4.5C9.9 3.5 10.9 3 12 3C14.2 3 16 4.8 16 7C16 11.5 9 16 9 16Z" fill="white"/>
-                </svg>
-                Meet AIBEVA, available now
-                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </a>
-              <a href="#protection"
-                className="inline-flex items-center justify-center gap-2 glass text-slate-300 hover:text-white px-8 py-4 rounded-2xl font-semibold text-base hover:bg-white/[0.08] transition-all">
-                How it will work
-              </a>
-            </div>
-
-            <div className="grid grid-cols-3 gap-3 animate-fade-up animate-delay-400">
-              {[
-                { v: "5",    l: "Safety layers",  s: "AIBguard" },
-                { v: "0",    l: "Child accounts",  s: "ever" },
-                { v: "EU",   l: "Data residency",  s: "always" },
-              ].map((s) => (
-                <div key={s.l} className="glass rounded-xl p-3 text-center hover:bg-white/[0.07] transition-colors">
-                  <div className="text-xl font-extrabold gradient-text">{s.v}</div>
-                  <div className="text-[10px] font-semibold text-white/70 mt-0.5 leading-tight">{s.l}</div>
-                  <div className="text-[9px] text-slate-600 mt-0.5">{s.s}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right: parent dashboard mockup */}
-          <div className="hidden lg:block animate-fade-up animate-delay-300">
-            <img
-              src="/hero-parent-dashboard.png"
-              alt="AIBfamily parent dashboard showing real-time AI safety alerts and crisis detection for children ages 4-15"
-              width="1200"
-              height="900"
-              className="w-full h-auto rounded-2xl shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
-            />
-          </div>
-
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-14 pb-16 sm:pt-24 sm:pb-28">
+        <p className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-gold/70 bg-gold/15 text-[11px] sm:text-xs font-extrabold tracking-[0.16em] uppercase text-gold-light">
+          In development — being built on AIB.core
+        </p>
+        <h1 className="headline text-white text-[2.3rem] min-[400px]:text-[2.7rem] sm:text-6xl lg:text-7xl mb-7 sm:mb-9 max-w-5xl">
+          PARENTS SEE WHAT THEY NEED.
+          <span className="block gold-text">CHILDREN KEEP THEIR PRIVACY.</span>
+        </h1>
+        <p className="text-slate-200 text-lg sm:text-xl leading-relaxed max-w-2xl mb-9">
+          AIBfamily is family mode for AIBs. Every family member has their own intelligent being — and only what is explicitly allowed is shared.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <a href="mailto:info@aiblab.info?subject=AIBfamily"
+            className="btn-gold inline-flex items-center justify-center px-7 py-4 rounded-xl font-extrabold text-base transition-all hover:-translate-y-0.5">
+            Tell us what your family needs
+          </a>
+          <a href="#how"
+            className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/[0.08] transition-all">
+            How it works
+          </a>
         </div>
       </div>
     </section>
