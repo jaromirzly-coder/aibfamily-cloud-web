@@ -46,10 +46,10 @@ export default function Safe({ highlight, intro }: { highlight?: LayerName; intr
         <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,8fr)] gap-6 lg:gap-8 items-start">
           <div className="lg:sticky lg:top-24 min-w-0">
             <img
-              src={IMAGES.safeLayers.src}
-              alt="Seven layers of AIB.core around one core"
-              width={IMAGES.safeLayers.width}
-              height={IMAGES.safeLayers.height}
+              src={IMAGES.famLayers.src}
+              alt="Seven gold rings of AIB.core around a home"
+              width={IMAGES.famLayers.width}
+              height={IMAGES.famLayers.height}
               loading="lazy"
               className="w-full h-auto max-h-[420px] lg:max-h-none object-cover rounded-2xl border border-white/[0.08]"
             />

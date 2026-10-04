@@ -1,9 +1,18 @@
 import { AIBLAB } from "@/lib/links";
+import { IMAGES } from "./images";
 
 export default function Contact() {
   return (
     <section id="contact" aria-labelledby="contact-title" className="bg-navy-900 border-y border-white/[0.06] scroll-mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <img
+          src={IMAGES.famContact.src}
+          alt="A family kitchen table at night under a warm lamp, with a soft golden network above it"
+          width={IMAGES.famContact.width}
+          height={IMAGES.famContact.height}
+          loading="lazy"
+          className="lg:col-span-2 w-full h-auto max-h-[440px] object-cover rounded-2xl border border-white/[0.08]"
+        />
         <div className="min-w-0">
           <p className="kicker">Contact</p>
           <h2 id="contact-title" className="headline text-white text-[2.4rem] sm:text-6xl mb-6">
