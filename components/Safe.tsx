@@ -51,7 +51,7 @@ export default function Safe({ highlight, intro }: { highlight?: LayerName; intr
               width={IMAGES.famLayers.width}
               height={IMAGES.famLayers.height}
               loading="lazy"
-              className="block w-full max-w-[220px] sm:max-w-[260px] lg:max-w-[300px] mx-auto h-auto rounded-2xl border border-white/[0.08]"
+              className="block w-full max-w-[220px] sm:max-w-[260px] lg:max-w-[280px] mx-auto h-auto [mask-image:radial-gradient(circle,black_45%,transparent_70%)] [-webkit-mask-image:radial-gradient(circle,black_45%,transparent_70%)]"
             />
           </div>
           <ol className="grid md:grid-cols-2 gap-4 sm:gap-5 min-w-0">

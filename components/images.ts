@@ -8,7 +8,7 @@ export const IMAGES = {
   // AIBfamily-only images (4 Oct 2026)
   famHero:    { src: "/images/aibfamily-hero.webp",      width: 1024, height: 572 },
   famHow:     { src: "/images/aibfamily-how.webp",       width: 1024, height: 687 },
-  famLayers:  { src: "/images/aibfamily-layers.webp",    width: 687,  height: 1024 },
+  famLayers:  { src: "/images/aibfamily-layers.webp",    width: 687,  height: 687 },
   famContact: { src: "/images/aibfamily-contact.webp",   width: 1024, height: 687 },
   famAibeva:  { src: "/images/aibfamily-aibeva.webp",    width: 1024, height: 434 },
 };
