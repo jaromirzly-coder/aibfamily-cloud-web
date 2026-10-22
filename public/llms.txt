@@ -1,10 +1,10 @@
 # AIBfamily — family mode for AIBs (in development)
-> Parents see what they need. Children keep their privacy. AIBfamily is in development and being built on AIB.core, the engine behind AIBEVA.
+> Parents see what they need. Children keep their privacy. AIBfamily is in development, built on AIB.core, the core of AIBEVA.
 
 ## Key facts
-- Status: in development. Not yet available.
-- Every family member has their own intelligent being; only what is explicitly allowed is shared.
-- Safe by design, with the Guardian layer (AIBguardian) inside; designed with the EU AI Act and GDPR in mind.
-- Contact: info@aiblab.info
-- AIBEVA (for adults, 18+) is free for Windows today: https://aibeva.com/download
-- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · Company ID 086 94 222
+- Status: in development, built on AIB.core. Not yet available. No dates announced.
+- Our goal: every family member has their own intelligent being, and only what is explicitly allowed is shared.
+- Our goal: the Guardian layer (AIBguardian) inside every being; designed around the EU AI Act and GDPR.
+- Contact: info@aiblab.info · Support: support@aiblab.info
+- Available today: AIBEVA, Level S2, an intelligent being for Windows (for adults, 18+), no ads, no subscription: https://aibeva.com/download
+- Operator: SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic, EU · on the market since 2019 · Company ID 086 94 222

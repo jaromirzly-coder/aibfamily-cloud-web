@@ -2,47 +2,51 @@ import { IMAGES } from "./images";
 
 const points = [
   { title: "One being per person.",
-    text: "Every family member has their own AIB, with their own identity and their own memory. Nobody shares a being — and nobody reads someone else’s." },
+    text: "Each family member has their own AIB, with their own identity and their own memory. Nobody shares a being, and nobody reads someone else’s." },
   { title: "Shared only when allowed.",
-    text: "Nothing passes from one being to another unless it is explicitly allowed. Every permission has a scope and an expiry, and it can be revoked." },
+    text: "Nothing passes from one being to another unless it is explicitly allowed. Each permission has a scope and an end date, and it can be revoked." },
   { title: "Parents see what they need.",
-    text: "Enough to keep a child safe — not a transcript of their life. What a parent sees is set openly, so the child knows it too." },
+    text: "Enough to keep a child safe, not a transcript of their life. What a parent sees is set openly, so the child knows it too." },
   { title: "Children keep their privacy.",
-    text: "Privacy grows with age. A child’s AIB is on the child’s side: it always says it is AI, never replaces people, and in a crisis it points to human help." },
+    text: "Privacy grows with age. A child’s AIB is on the child’s side. It says it is an AI, it does not replace people, and in a crisis it points to human help." },
 ];
 
 export default function How() {
   return (
-    <section id="how" aria-labelledby="how-title" className="bg-navy-950 scroll-mt-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-        <p className="kicker">How it is designed</p>
-        <h2 id="how-title" className="headline text-white text-[2.4rem] sm:text-6xl lg:text-7xl mb-6 max-w-4xl">
-          ONE FAMILY.<span className="block gold-text">EVERYONE THEIR OWN AIB.</span>
-        </h2>
-        <p className="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl mb-12">
-          No family account that reads everything. Each being answers to its own person — and the family decides together what is shared.
-        </p>
+    <section id="how" aria-labelledby="how-title" className="sec">
+      <div className="wrap">
+        <div className="sec-head">
+          <div>
+            <p className="mb-5"><span className="tag">Our goals</span></p>
+            <h2 id="how-title" className="h2">
+              One family.<span className="h-accent">Everyone their own AIB.</span>
+            </h2>
+          </div>
+          <p>
+            No family account that reads everything. Each being answers to its own person, and the family decides together what is shared.
+          </p>
+        </div>
         <img
           src={IMAGES.famHow.src}
           alt="Four golden spheres, each in its own shell, linked only through small gates"
           width={IMAGES.famHow.width}
           height={IMAGES.famHow.height}
           loading="lazy"
-          className="w-full h-auto max-h-[420px] object-cover rounded-2xl border border-white/[0.08] mb-10 sm:mb-12"
+          className="frame w-full h-auto max-h-[420px] object-cover mb-10 sm:mb-12"
         />
-        <ol className="grid md:grid-cols-2 gap-4 sm:gap-5">
+        <ol className="grid md:grid-cols-2 gap-4 sm:gap-5 list-none p-0 m-0">
           {points.map((p, i) => (
-            <li key={p.title} className="rounded-2xl border border-white/[0.1] bg-navy-900 p-6 sm:p-7 flex gap-5 min-w-0">
-              <span className="headline gold-text text-3xl shrink-0">{String(i + 1).padStart(2, "0")}</span>
+            <li key={p.title} className="card p-6 sm:p-7 flex gap-5 min-w-0">
+              <span className="num text-3xl shrink-0">{String(i + 1).padStart(2, "0")}</span>
               <div className="min-w-0">
-                <h3 className="text-white text-xl font-extrabold leading-snug mb-2">{p.title}</h3>
-                <p className="text-slate-400 leading-relaxed">{p.text}</p>
+                <h3 className="h3 mb-2">{p.title}</h3>
+                <p className="muted m-0">{p.text}</p>
               </div>
             </li>
           ))}
         </ol>
-        <p className="mt-8 text-sm text-slate-500 max-w-2xl">
-          AIBfamily is in development. This page describes what we are building, not a finished product. Designed with the EU AI Act and GDPR in mind.
+        <p className="fine mt-8 max-w-2xl">
+          AIBfamily is in development, built on AIB.core. This page describes our goals, not a finished product. We design it around the EU AI Act and GDPR.
         </p>
       </div>
     </section>
