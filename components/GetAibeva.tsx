@@ -11,49 +11,54 @@ export default function GetAibeva({
 }: {
   kicker?: string;
   title: string;
+  /** Second headline line, shown in the site accent colour. */
   gold: string;
   intro: string;
   adultsNote?: boolean;
 }) {
   return (
-    <section id="aibeva" aria-labelledby="aibeva-title" className="relative overflow-hidden bg-navy-950 scroll-mt-16">
-      <img
-        src={IMAGES.famAibeva.src}
-        alt="Your AIB lives on your own computer"
-        width={IMAGES.famAibeva.width}
-        height={IMAGES.famAibeva.height}
-        loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover object-left opacity-70"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-950/40 pointer-events-none" />
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
-        <p className="kicker">{kicker}</p>
-        <h2 id="aibeva-title" className="headline text-white text-[2.4rem] sm:text-6xl lg:text-7xl mb-6 max-w-4xl">
-          {title}<span className="block gold-text">{gold}</span>
-        </h2>
-        <p className="text-slate-200 text-lg sm:text-xl leading-relaxed max-w-2xl mb-8">{intro}</p>
-        <ul className="grid sm:grid-cols-3 gap-3 sm:gap-4 max-w-3xl mb-9 text-sm font-semibold text-slate-200">
-          {["Its own identity", "A memory you can see — on your PC", "Free for Windows · no account"].map((t) => (
-            <li key={t} className="rounded-xl border border-white/15 bg-navy-900/80 px-4 py-3">{t}</li>
-          ))}
-        </ul>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <a href={DOWNLOAD} target="_blank" rel="noopener"
-            className="btn-gold inline-flex items-center justify-center px-7 py-4 rounded-xl font-extrabold text-base transition-all hover:-translate-y-0.5">
-            Download AIBEVA free for Windows
-          </a>
-          <a href={aibeva()} target="_blank" rel="noopener"
-            className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/[0.08] transition-all">
-            Meet AIBEVA ↗
-          </a>
-          <a href={AIBLAB} target="_blank" rel="noopener"
-            className="inline-flex items-center justify-center border border-white/30 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/[0.08] transition-all">
-            AIBlab ↗
-          </a>
+    <section id="aibeva" aria-labelledby="aibeva-title" className="sec">
+      <div className="wrap">
+        <div className="relative overflow-hidden rounded-[28px] border border-rule bg-surface">
+          <img
+            src={IMAGES.famAibeva.src}
+            alt="Your AIB lives on your own computer"
+            width={IMAGES.famAibeva.width}
+            height={IMAGES.famAibeva.height}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover object-left opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/90 to-bg/40 pointer-events-none" />
+          <div className="relative p-6 sm:p-12 lg:p-16">
+            <p className="mb-6"><span className="tag tag-today">{kicker}</span></p>
+            <h2 id="aibeva-title" className="h2 mb-6 max-w-[16ch]">
+              {title}<span className="h-accent">{gold}</span>
+            </h2>
+            <p className="lede mb-8">{intro}</p>
+            <ul className="grid sm:grid-cols-3 gap-3 max-w-3xl mb-9 text-sm font-semibold text-ink list-none p-0">
+              {["Its own identity", "A memory you can see, on your PC", "No ads · no subscription"].map((t) => (
+                <li key={t} className="rounded-2xl border border-rule bg-surface/85 px-4 py-3">{t}</li>
+              ))}
+            </ul>
+            <div className="actions">
+              <a href={DOWNLOAD} target="_blank" rel="noopener" className="btn btn-solid">
+                Download AIBEVA
+              </a>
+              <a href={aibeva()} target="_blank" rel="noopener" className="btn btn-line">
+                Meet AIBEVA ↗
+              </a>
+              <a href={AIBLAB} target="_blank" rel="noopener" className="btn btn-line">
+                AIBlab ↗
+              </a>
+            </div>
+            <p className="fine mt-7 max-w-2xl">
+              Windows 10/11, 64-bit · signed installer, SHA-256 published.{adultsNote ? " AIBEVA is for adults (18+)." : ""}
+            </p>
+            <div className="disclosure mt-4 max-w-2xl">
+              AIBEVA is an artificial intelligence system. When you use it, you are interacting with an AI, not a human being. (EU AI Act, Article 50.)
+            </div>
+          </div>
         </div>
-        <p className="mt-6 text-xs text-slate-400 max-w-2xl">
-          Windows 10/11, 64-bit · signed installer · zero telemetry.{adultsNote ? " AIBEVA is for adults (18+)." : ""} AIBEVA is an artificial intelligence system — you are interacting with an AI, not a human being.
-        </p>
       </div>
     </section>
   );

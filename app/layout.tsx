@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Consent from "@/components/Consent";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
-// next/font self-hosts the font files: no request goes to Google.
-const sans = Inter({ subsets: ["latin", "latin-ext"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-sans", display: "swap" });
+// System fonts only (Segoe UI Variable / system-ui): no font is downloaded.
 
 export const metadata: Metadata = {
-  // Explicit production domain: og:image and twitter:image must never point to a vercel.app preview URL.
+  // Explicit production domain: og:image and twitter:image must not point to a vercel.app preview URL.
   metadataBase: new URL("https://www.aibfamily.cloud"),
   title: { default: SITE.title, template: `%s | ${SITE.name}` },
   description: SITE.description,
@@ -81,7 +79,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={sans.variable}>
+    <html lang="en">
       <head>
         <script id="consent-default" dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
