@@ -1,89 +1,56 @@
-const ecosystem = [
-  { label: "aiblab.info",      href: "https://aiblab.info",      desc: "Hub" },
-  { label: "aibgin.info",      href: "https://aibgin.info",      desc: "Schools" },
-  { label: "aibguardian.info", href: "https://aibguardian.info", desc: "Safety" },
-  { label: "aibfamily.cloud",  href: "https://aibfamily.cloud",  desc: "Families" },
-];
-
-const legal = [
-  { label: "Privacy Policy",      href: "/privacy-policy" },
-  { label: "Terms of Service",    href: "/terms" },
-  { label: "Cookie Policy",       href: "/cookies" },
-  { label: "Withdrawal Policy",   href: "/withdrawal" },
-];
+import { SITE } from "@/lib/site";
+import { ECOSYSTEM } from "@/lib/links";
+import CookieSettings from "./CookieSettings";
 
 export default function Footer() {
   return (
-    <footer className="bg-fam-950 border-t border-white/[0.06]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-10 mb-14">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-brand-coral to-brand-violet flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M7 12C7 12 1 8.5 1 5C1 3.3 2.3 2 4 2C4.9 2 5.7 2.4 7 3.5C8.3 2.4 9.1 2 10 2C11.7 2 13 3.3 13 5C13 8.5 7 12 7 12Z" fill="white"/>
-                </svg>
-              </div>
-              <span className="font-bold text-white text-lg tracking-tight">
-                AIB<span className="gradient-text">family</span>
-              </span>
-            </div>
-            <p className="text-slate-500 text-sm leading-relaxed mb-4">
-              In development. Safe AI for families, designed for children ages 4–15. EU data only.
-            </p>
-            <p className="text-slate-600 text-xs">AIBlab · SAY TO PAY s.r.o.</p>
-            <p className="text-slate-600 text-xs">IČO: 08694222 · Czech Republic · EU</p>
+    <footer className="foot">
+      <div className="wrap">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.3fr_1fr] gap-10 mb-10">
+          <div className="min-w-0">
+            <p className="logo m-0 mb-3">{SITE.name}</p>
+            <p className="m-0 leading-relaxed">{SITE.tagline}</p>
           </div>
 
-          <div>
-            <h5 className="text-xs font-bold text-slate-400 mb-5 uppercase tracking-[0.15em]">Product</h5>
-            <ul className="space-y-3">
-              {[
-                { label: "5-Layer Protection", href: "#protection" },
-                { label: "Parent Dashboard",   href: "#dashboard" },
-                { label: "FAQ",                href: "#faq" },
-              ].map((l) => (
-                <li key={l.label}>
-                  <a href={l.href} className="text-sm text-slate-500 hover:text-white transition-colors">{l.label}</a>
-                </li>
+          <nav aria-label="Pages" className="min-w-0">
+            <h2>{SITE.name}</h2>
+            <ul className="list-none p-0 m-0 space-y-2">
+              {SITE.pages.map((p) => (
+                <li key={p.href}><a href={p.href}>{p.label}</a></li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          <div>
-            <h5 className="text-xs font-bold text-slate-400 mb-5 uppercase tracking-[0.15em]">Ecosystem</h5>
-            <ul className="space-y-3">
-              {ecosystem.map((d) => (
-                <li key={d.label}>
-                  <a href={d.href} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-slate-500 hover:text-white transition-colors">
-                    {d.label}
-                    <span className="text-slate-700 text-[10px] font-medium border border-white/[0.06] px-1.5 py-0.5 rounded-full">{d.desc}</span>
+          <nav aria-label="AIBlab ecosystem" className="min-w-0">
+            <h2>AIBlab ecosystem</h2>
+            <ul className="list-none p-0 m-0 space-y-2">
+              {ECOSYSTEM.map((e) => (
+                <li key={e.label}>
+                  <a href={e.href} {...(e.href === "/" ? {} : { target: "_blank", rel: "noopener" })}>
+                    {e.label} <span className="text-faint">· {e.desc}</span>
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
-          <div>
-            <h5 className="text-xs font-bold text-slate-400 mb-5 uppercase tracking-[0.15em]">Legal</h5>
-            <ul className="space-y-3">
-              {legal.map((l) => (
-                <li key={l.label}>
-                  <a href={l.href} className="text-sm text-slate-500 hover:text-white transition-colors">{l.label}</a>
-                </li>
-              ))}
+          <nav aria-label="Legal" className="min-w-0">
+            <h2>Legal and help</h2>
+            <ul className="list-none p-0 m-0 space-y-2">
+              <li><a href="/imprint">Imprint</a></li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms</a></li>
+              <li><CookieSettings className="linkbtn" /></li>
+              <li><a href="mailto:info@aiblab.info">info@aiblab.info</a></li>
+              <li><a href="mailto:support@aiblab.info">support@aiblab.info</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
 
-        <div className="border-t border-white/[0.06] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-600">A product of SAY TO PAY s.r.o. (AIBlab), Ostrava, Czech Republic · Patent pending — 100+ patent claims filed</p>
-          <div className="flex items-center gap-5 text-xs text-slate-600">
-            <a href="mailto:info@aibfamily.cloud" className="hover:text-brand-coral transition-colors">info@aibfamily.cloud</a>
-            <a href="mailto:support@aibfamily.cloud" className="hover:text-brand-coral transition-colors">support@aibfamily.cloud</a>
-            <a href="https://aibguardian.info" target="_blank" rel="noopener noreferrer" className="hover:text-brand-coral transition-colors">Powered by AIBguardian</a>
-          </div>
+        <div className="border-t border-rule pt-6 text-[0.84rem] text-faint leading-relaxed">
+          <p className="m-0 mb-1">AIBfamily is in development, built on AIB.core. AIBEVA is an artificial intelligence system: when you use it, you are interacting with an AI, not a human being.</p>
+          <p className="m-0 mb-1">SAY TO PAY s.r.o. (AIBlab) · Company ID 086 94 222 · Ostrava, EU · on the market since 2019</p>
+          <p className="m-0">&copy; 2026 SAY TO PAY s.r.o.</p>
         </div>
       </div>
     </footer>
