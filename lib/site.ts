@@ -2,7 +2,7 @@
 export const SITE = {
   name: "AIBfamily",
   domain: "aibfamily.cloud",
-  url: "https://www.aibfamily.cloud",
+  url: "https://aibfamily.cloud",
   short: "aibfamily",
   gaId: "G-LP9LSDLSHN",
   tagline: "Family mode for AIBs. In development, built on AIB.core. Our goal: AI that belongs to each person in the family, not to a platform.",
