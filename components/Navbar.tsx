@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
-import { aibeva, DOWNLOAD } from "@/lib/links";
+import { aibeva, DOWNLOAD, ACADEMY } from "@/lib/links";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,6 +24,7 @@ export default function Navbar() {
             <a key={l.label} href={l.href} className="nav-link">{l.label}</a>
           ))}
           <a href={aibeva()} target="_blank" rel="noopener" className="nav-link">AIBEVA ↗</a>
+          <a href={ACADEMY} target="_blank" rel="noopener" className="nav-link">Academy ↗</a>
         </div>
 
         <div className="flex items-center gap-2">
@@ -49,6 +50,9 @@ export default function Navbar() {
           ))}
           <a href={aibeva()} target="_blank" rel="noopener" onClick={() => setOpen(false)} className="nav-link px-3 py-2.5 rounded-xl hover:bg-tint">
             AIBEVA ↗
+          </a>
+          <a href={ACADEMY} target="_blank" rel="noopener" onClick={() => setOpen(false)} className="nav-link px-3 py-2.5 rounded-xl hover:bg-tint">
+            Academy ↗
           </a>
           <div className="border-t border-rule mt-2 pt-3">
             <a href={DOWNLOAD} target="_blank" rel="noopener" onClick={() => setOpen(false)} className="btn btn-solid w-full">
